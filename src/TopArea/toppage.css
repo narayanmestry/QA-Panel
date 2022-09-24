@@ -1,0 +1,83 @@
+/* .toprow{
+    background-color: gray;
+  }
+  
+  td {
+    width: 400px;
+  }
+  
+  label.form-label {
+    padding-left: 50px;
+  }
+  
+  .table>:not(caption)>*>* {
+    padding: 0.1rem 0.1rem;
+  } */
+
+.top-form {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 15px 0;
+  background: rgb(221, 221, 221);
+}
+
+
+
+.boxTop{
+  display: flex;
+  justify-content: space-between;
+  padding:4px 76px 4px 0 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label {
+  padding: 5px 0 5px 80px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+td {
+  width: 320px;
+  height: 50px;
+}
+
+
+input[type="text"] {
+  width: 350px;
+  height: 26px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+input[type="date"] {
+  width: 350px;
+  border-radius: 5px;
+  height: 26px;
+  font-size: 12px;
+}
+
+select {
+  word-wrap: normal;
+  width: 350px;
+  border-radius: 5px;
+  height: 25px;
+  font-size: 12px;
+}

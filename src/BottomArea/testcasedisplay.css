@@ -1,0 +1,39 @@
+.testcase-heading{
+    text-align: center;
+}
+
+.fisrtCol{
+    width: 150px;
+}
+th{
+    font-size: 20px;
+}
+.testCaseDisplayArea Table{
+    padding: 30px;
+}
+
+table.table.table-sm.table-striped.table-bordered.table-hover {
+    width: 1500px;
+    margin-left: 50px;
+}
+
+button.formOpenButton.btn.btn-outline-secondary{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+}
+
+span.material-symbols-outlined{
+    font-size: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+
+  .my-modal{
+     min-width: 50%;
+    }
