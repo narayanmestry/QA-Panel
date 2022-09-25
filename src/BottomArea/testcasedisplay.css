@@ -8,12 +8,22 @@
 th{
     font-size: 20px;
 }
-.testCaseDisplayArea Table{
-    padding: 30px;
+
+.display .testcase-table{
+font-size: 15px;
 }
 
+.display .testcase-table thead{
+    background: black;
+    color: white;
+    border-collapse: collapse;
+    padding: 20px 0;
+    font-size: 20px;
+
+
+}
 table.table.table-sm.table-striped.table-bordered.table-hover {
-    width: 1500px;
+    width: auto;
     margin-left: 50px;
 }
 

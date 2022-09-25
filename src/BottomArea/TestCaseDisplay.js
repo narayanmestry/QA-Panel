@@ -11,12 +11,12 @@ function TestCasedisplay() {
   const handleModalShow = () => setShow(true);
 
   return (
-    <div>
+    <div className="display">
       {" "}
       <div className="testcase-heading">
         <h3>Test-Case List</h3>
       </div>
-      <Table striped bordered hover size="sm    ">
+      <Table className="testcase-table" hover size="sm">
         <thead>
           <tr>
             <th className="fisrtCol">Test case ID</th>
