@@ -1,9 +1,9 @@
-*{
+/* *{
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow-x:hidden;
-  overflow-y:hidden; */
+  overflow-x:hidden;
+  overflow-y:hidden;
   
 }
 
@@ -21,4 +21,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+ */

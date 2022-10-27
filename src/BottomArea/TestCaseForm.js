@@ -1,102 +1,81 @@
 import React from "react";
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import { Form, Button, Table } from "react-bootstrap";
+// import FloatingLabel from "react-bootstrap/FloatingLabel";
+import { Form, Button } from "react-bootstrap";
+import "./testcaseform.css";
 
 function TestCaseForm() {
   return (
-    <div>
+    <div className="modal-testcaseform-container">
       <Form>
-        <Table>
-          <tbody>
-            <tr>
-              <Form.Group>
-                <td>
-                  {" "}
-                  <Form.Label>Test Case ID :</Form.Label>
-                </td>
-                <td>
-                  <Form.Control type="text" placeholder="Test Case ID" />
-                </td>
-              </Form.Group>
-            </tr>
-            <tr>
-              <Form.Group>
-                <td>
-                  {" "}
-                  <Form.Label>Description : </Form.Label>
-                </td>
-                <td>
-                  <FloatingLabel controlId="floatingTextarea2" label="TestCase Description">
-                    <Form.Control
-                      as="textarea"
-                      placeholder="Leave a comment here"
-                      style={{ height: "100px" }}
-                    />
-                  </FloatingLabel>
-                </td>
-              </Form.Group>
-            </tr>{" "}
-            <tr>
-            <Form.Group>
-                <td>
-                  {" "}
-                  <Form.Label>Summary : </Form.Label>
-                </td>
-                <td>
-                  <FloatingLabel controlId="floatingTextarea2" label="TestCase Summary">
-                    <Form.Control
-                      as="textarea"
-                      placeholder="Leave a comment here"
-                      style={{ height: "100px" }}
-                    />
-                  </FloatingLabel>
-                </td>
-              </Form.Group>
-            </tr>
+        <div className="modal-upperform">
+          <div className="test-case-id form-box">
+            <label className="left-label" htmlFor="">
+              Test Case ID :
+            </label>
+            <input type="text" placeholder="Test Case ID" />
+          </div>
 
-            <tr>
-              <Form.Group>
-                <td>
-                  {" "}
-                  <Form.Label>App Version :</Form.Label>
-                </td>
-                <td>
-                  <Form.Control type="text" placeholder="App Version" />
-                </td>
-              </Form.Group>
-            </tr>
+          <div className="test-case form-box">
+            <label className="left-label" htmlFor="">
+              Test Case:
+            </label>
+            <input type="text" placeholder="Test Case" />
+          </div>
 
-            <tr>
-              <Form.Group>
-                <td>
-                  {" "}
-                  <Form.Label>Priority :</Form.Label>
-                </td>
-                <td>
-                  <Form.Select aria-label="Default select example" variant ="dark">
-                    <option>Select Priority</option>
-                    <option value="1">Low</option>
-                    <option value="2">Medium</option>
-                    <option value="3">High</option>
-                  </Form.Select>
-                </td>
-              </Form.Group>
-            </tr>
+          <div className="description form-box">
+            <label className="left-label" htmlFor="">
+              Description :
+            </label>
+            <textarea name="" id="" cols="96" rows="2"></textarea>
+          </div>
+        </div>
+        <div className="modal-bottomform">
+          <div className="app-name form-box">
+            <label className="left-label1" htmlFor="">
+              Associate App
+            </label>
+            <select className="left-select" name="" id="">
+              <option value="">Select App</option>
+              <option value="">GLUV Native</option>
+              <option value="">FX Native</option>
+              <option value="">FM Native</option>
+              <option value="">Retail</option>
+              <option value="">Headless</option>
+            </select>
+          </div>
 
-            <tr>
-              <Form.Group>
-                <td>
-                  {" "}
-                  <Form.Label>Ticket no :</Form.Label>
-                </td>
-                <td>
-                  <Form.Control type="text" placeholder="Ticket no" />
-                </td>
-              </Form.Group>
-            </tr>
+          <div className="parent form-box">
+            <label htmlFor="">Parent</label>
+            <div className="text-checkbox">
+              <input type="text" placeholder="1001"></input>
+              <input type="checkbox" id="" name="" value=""></input>
+            </div>
+          </div>
 
-          </tbody>
-        </Table>
+          <div className="priority form-box">
+            <label className="left-label1" htmlFor="">
+              Priority
+            </label>
+            <select className="left-select" name="" id="">
+              <option value="">Select Priority</option>
+              <option value="">Low</option>
+              <option value="">Medium</option>
+              <option value="">High</option>
+              <option value="">Urgent</option>
+            </select>
+          </div>
+
+          <div className="status form-box">
+            <label htmlFor="">Status</label>
+            <select className="right-select" name="" id="">
+              <option value="">Select Status</option>
+              <option value="">To-do</option>
+              <option value="">In-Progress</option>
+              <option value="">Pass</option>
+              <option value="">Failed</option>
+            </select>
+          </div>
+        </div>
       </Form>
     </div>
   );

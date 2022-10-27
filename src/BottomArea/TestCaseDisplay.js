@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Table, Button } from "react-bootstrap";
 import "./testcasedisplay.css";
-import Modal from "react-bootstrap/Modal";
+import Modal from "react-bootstrap/Modal"; // step1
 import TestCaseForm from "./TestCaseForm";
 
 function TestCasedisplay() {
@@ -12,9 +12,8 @@ function TestCasedisplay() {
 
   return (
     <div className="display">
-      {" "}
       <div className="testcase-heading">
-        <h3>Test-Case List</h3>
+        <h4>Test-Case List</h4>
       </div>
       <Table className="testcase-table" hover size="sm">
         <thead>
@@ -41,20 +40,24 @@ function TestCasedisplay() {
         </tbody>
       </Table>
       <Modal
+        className="myModal-content"
         dialogClassName="my-modal"
         show={show}
         onHide={handleModalClose}
         animation={true}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Test Case Form</Modal.Title>
+          <Modal.Title>
+           
+            <h2 style={{paddingLeft: "376px"}}>Test Case Form</h2>
+          </Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
           <TestCaseForm />
         </Modal.Body>
 
-        <Modal.Footer>
+        <Modal.Footer className="modal-footer">
           <Button variant="danger" onClick={handleModalClose}>
             Close
           </Button>
