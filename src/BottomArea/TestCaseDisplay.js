@@ -39,8 +39,10 @@ function TestCasedisplay() {
           </tr>
         </tbody>
       </Table>
+ 
+      {/* Modal */}
       <Modal
-        className="myModal-content"
+        // className="myModal-content"
         dialogClassName="my-modal"
         show={show}
         onHide={handleModalClose}
@@ -72,7 +74,7 @@ function TestCasedisplay() {
         onClick={handleModalShow}
       >
         <span className="material-symbols-outlined">add</span>
-      </Button>{" "}
+      </Button>
     </div>
   );
 }

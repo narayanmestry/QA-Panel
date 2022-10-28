@@ -1,13 +1,13 @@
 import React from "react";
 import "./toppage.css";
-import { Form } from "react-bootstrap";
+// import { Form } from "react-bootstrap";
 
 import "react-datepicker/dist/react-datepicker.css";
 
 function TopPageForm() {
   return (
     <div className="toppage-container">
-      <Form>
+      <form>
         <div className="top-form">
           <div className="appname boxTop">
             <label htmlFor="">App Name</label>
@@ -45,7 +45,7 @@ function TopPageForm() {
             </select>
           </div>
         </div>
-      </Form>
+      </form>
     </div>
   );
 }
