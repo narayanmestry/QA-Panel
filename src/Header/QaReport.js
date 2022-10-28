@@ -8,7 +8,7 @@ function QaReport() {
   return (
     <div className="report-container">
       <div className="report-header">
-        <h6>QA Management Report Panel</h6>
+        <h4>QA Management Report Panel</h4>
       </div>
       <div className="backicon">
           <Link to="/">

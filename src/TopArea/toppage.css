@@ -3,7 +3,7 @@
 .toppage-container .top-form {
   display: grid;
   grid-template-columns: auto auto;
-  padding: 4px 0;
+  padding: 10px 0;
   background: rgb(221, 221, 221);
 }
 

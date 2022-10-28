@@ -1,9 +1,11 @@
-.report-container .report-header h6 {
+.report-container .report-header h4 {
     text-align: center;
 }
 
 .report-container .report-header {
-    margin: 20px 0;
+    padding: 15px 0;
+    color: white;
+    background: black;
 }
 
 
@@ -15,7 +17,7 @@
     font-size: 32px;
 }
 .backicon svg {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .filterby {

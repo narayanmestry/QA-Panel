@@ -6,14 +6,14 @@
     display: flex;
     /* justify-content: center;
     align-items: center; */
-    height: 50px;
+    height: 60px;
     color:white;
     background: black;
 }
 
 .header h4 {
     text-align: center;
-    padding: 8px 0 0 500px;
+    padding: 14px 0 0 500px;
     
 }
 
