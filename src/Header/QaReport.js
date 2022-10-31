@@ -11,10 +11,10 @@ function QaReport() {
         <h4>QA Management Report Panel</h4>
       </div>
       <div className="backicon">
-          <Link to="/">
-            <BiArrowBack />
-          </Link>
-        </div>
+        <Link to="/">
+          <BiArrowBack />
+        </Link>
+      </div>
       <div className="filterby">
         <label htmlFor="">Filter By : </label>
         <select className="filter-label" name="" id="">
@@ -62,6 +62,10 @@ function QaReport() {
           Reset
         </Button>
       </div>
+
+      <button className="export-button" variant="primary" size="sm">
+        Export to PDF
+      </button>
 
       <div className="report-table">
         <Table striped bordered hover>

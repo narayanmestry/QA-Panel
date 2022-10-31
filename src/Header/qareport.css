@@ -46,8 +46,17 @@
 
 .report-container .report-table th {
     font-size: 15px;
+    background:black;   
+    color: white;
 }
 
 .report-container .report-table td {
     font-size: 14px;
+}
+
+.export-button{
+    width: 200px;
+    float: right;
+    margin: 10px 16px 10px 0;
+    border:none;
 }
